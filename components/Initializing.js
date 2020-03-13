@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
-import {SafeAreaView, Text, Image, TouchableOpacity} from 'react-native';
+import {SafeAreaView, Text, Image, TouchableOpacity, Alert} from 'react-native';
 
 import {displayName as appName} from '../app.json';
 import image from '../assets/images/event_illustration.png';
 
 class Initializing extends Component {
-  startHandler() {}
+  startHandler() {
+    Alert.alert('welcome back');
+  }
 
   render() {
     const {centerContent, headerText, paragraph, button, buttonText} = styles;
